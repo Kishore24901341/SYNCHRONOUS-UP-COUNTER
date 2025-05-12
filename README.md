@@ -64,3 +64,5 @@ Developed by: AGILAN J RegisterNumber: 212224100002
 ![image](https://github.com/user-attachments/assets/cda1c39e-b18f-4d00-824a-2b77e7f2eaa3)
 
 **RESULTS**
+
+Hence a 4 bit synchronous up counter is implemented correctly
