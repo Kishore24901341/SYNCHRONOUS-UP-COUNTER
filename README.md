@@ -38,6 +38,11 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 
 5.Repeat steps 2-4 for each bit you want to input and shift.
 
+```
+Developed by: KISHORE V  RegisterNumber: 212224240077
+
+```
+
 **PROGRAM**
 
       module synupcounter(out,clk,rstn);
@@ -52,7 +57,6 @@ However, the remaining flip-flops should be made ready to toggle only when all l
       end
       endmodule
 
-Developed by: AGILAN J RegisterNumber: 212224100002
 
 **RTL LOGIC UP COUNTER**
 ![Screenshot (225)](https://github.com/user-attachments/assets/b119286c-56fe-4efb-a51d-7ccf4bccd73b)
