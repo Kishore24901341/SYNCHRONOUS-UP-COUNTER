@@ -39,6 +39,8 @@ Create nodes for inputs and outputs to generate the timing diagram.
 For different input combinations generate the timing diagram.
 
 **PROGRAM**
+Developed by:KISHORE V RegisterNumber: 212224240077
+
 ```
  module ex11 (
     output reg [3:0] out,
@@ -55,8 +57,6 @@ end
 endmodule
  
 ```
-Developed by:KISHORE V RegisterNumber: 212224240077
-*/
 
 **RTL LOGIC UP COUNTER**
 
