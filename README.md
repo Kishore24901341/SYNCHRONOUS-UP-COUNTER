@@ -28,45 +28,51 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 
 **Procedure**
 
-1.Initialize the shift register to a known state (e.g., all zeros).
+Type the program in Quartus software.
 
-2.Input a bit serially into the shift register.
+Compile and run the program.
 
-3.Shift the contents of the register one position to the right (or left).
+Generate the RTL schematic and save the logic diagram.
 
-4.Output the shifted bit from the last stage of the register.
+Create nodes for inputs and outputs to generate the timing diagram.
 
-5.Repeat steps 2-4 for each bit you want to input and shift.
-
-```
-Developed by: KISHORE V  RegisterNumber: 212224240077
-
-```
+For different input combinations generate the timing diagram.
 
 **PROGRAM**
+```
+ module ex11 (
+    output reg [3:0] out,
+    input clk,
+    input rst
+);
+always @ (posedge clk) begin
+    if (rst)
+        out <= 4'b0000;
+    else
+        out <= out + 1;
+end
 
-      module synupcounter(out,clk,rstn);
-      input clk,rstn;
-      output reg [3:0]out;
-      always @ (posedge clk)
-      begin
-         if(!rstn)
-           out<=0;
-         else 
-           out <= out+1;
-      end
-      endmodule
-
+endmodule
+ 
+```
+Developed by:KISHORE V RegisterNumber: 212224240077
+*/
 
 **RTL LOGIC UP COUNTER**
-![Screenshot (225)](https://github.com/user-attachments/assets/b119286c-56fe-4efb-a51d-7ccf4bccd73b)
+
+![image](https://github.com/user-attachments/assets/f14ff423-9d94-4a95-9f7f-f2d3c6432f9f)
+
 
 **TIMING DIAGRAM FOR IP COUNTER**
-![Screenshot (226)](https://github.com/user-attachments/assets/038cb6d2-2e37-4abf-b1b1-2100f15475f7)
+
+![image](https://github.com/user-attachments/assets/55c30ffa-f012-4fab-92ab-6661bd7beadf)
+
 
 **TRUTH TABLE**
-![image](https://github.com/user-attachments/assets/cda1c39e-b18f-4d00-824a-2b77e7f2eaa3)
+
+![image](https://github.com/user-attachments/assets/77d17e2e-b734-4a93-87a7-27decfa153b7)
+
 
 **RESULTS**
 
-Hence a 4 bit synchronous up counter is implemented correctly
+Thus 4 bit synchronous up counter is implemented and functionality is validated.
